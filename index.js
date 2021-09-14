@@ -11,7 +11,7 @@ const app = express()
 
 app.get("/", (req,res) => {
     res.sendFile(path.join(__dirname, "/public/index.html"));
-    Rollbar.info(`HTML file served successfukky!`);
+    Rollbar.info(`HTML file served successfully!`);
 })
 
 const port = process.env.PORT || 4545
